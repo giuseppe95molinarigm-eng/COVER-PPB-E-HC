@@ -76,7 +76,7 @@ logo = logo.resize((logo.width * 3, logo.height * 3), Image.LANCZOS)
 logo.save('logo.png')
 
 # ---------------- PDF ----------------
-c = canvas.Canvas(OUT + '.pdf', pagesize=(pt(W_IN), pt(H_IN)))
+c = canvas.Canvas(OUT + '.pdf', pagesize=(pt(W_IN), pt(H_IN)), initialFontName='B4')
 c.setTitle('PAPERBACK_8.000x10.000_226_BW_WHITE'); c.setAuthor('Dr. Enzo Pasciuti')
 
 # background: back + spine white, navy band across back and spine
